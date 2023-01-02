@@ -16,6 +16,11 @@ h2 {
   font-family: 'Playfair Display';
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 h2,
 h3 {
   color: #5c3d30;
@@ -23,6 +28,14 @@ h3 {
 
 h1 {
   color: #6e6762;
+  font-size: 90px;
+  opacity: 50%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0;
 }
 
 p {
@@ -52,4 +65,69 @@ footer {
 
 main ul {
   list-style: none;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3,
+p {
+  margin: 5%;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.opgavebeskrivelser {
+  background-color: white;
+  padding: 5%;
+  box-shadow: 5px 5px 5px #6e6762;
+  border-radius: 2px;
+  margin-bottom: 5rem;
+}
+
+.cvbox1,
+.cvbox2 {
+  background-color: white;
+  padding: 5%;
+  box-shadow: 5px 5px 5px #6e6762;
+  border-radius: 2px;
+}
+
+.cvbox1 {
+  margin-bottom: 5%;
+}
+
+.h1cv {
+  text-align: left;
+}
+
+.h1ommig {
+  text-align: left;
+}
+
+.h2forside {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.boxforside {
+  border: 1px solid #5c3d30;
+  width: 250px;
+}
+
+.ultema {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
