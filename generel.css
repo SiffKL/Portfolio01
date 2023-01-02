@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 320;
+  src: url('fonts/Roboto/Roboto-Light.ttf;');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-weight: 320;
+  src: url('fonts/Playfair_Display/');
+}
+
+li,
+h1,
+h2 {
+  font-family: 'Playfair Display';
+}
+
+h2,
+h3 {
+  color: #5c3d30;
+}
+
+h1 {
+  color: #6e6762;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #6e6762;
+}
+
+nav {
+  background-color: #dddbd6;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 1em;
+  margin: 1em;
+}
+
+body {
+  background-color: #dddbd6;
+}
+
+footer {
+  background-color: #dddbd6;
+}
+
+main ul {
+  list-style: none;
+}
