@@ -140,9 +140,10 @@ main ul {
 
 .ultema {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 10%;
   margin-bottom: 20%;
+  line-height: 3rem;
 }
 
 main {
@@ -202,9 +203,11 @@ img {
 img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  opacity: 30%;
 }
 
 img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
+  opacity: 100%;
 }
