@@ -16,7 +16,8 @@
 /* _____________ Overskrifter, fonte, størrelser og farver _____________ */
 
 .h1forside {
-  /* text-align: left; */
+  opacity: 10%;
+  margin-bottom: 15rem;
 }
 
 .h11,
@@ -124,7 +125,7 @@ footer {
   background-color: #dddbd6;
 }
 
-/* ______________________ List __________________ */
+/* _____________________ List __________________ */
 
 header ul {
   list-style: none;
@@ -151,6 +152,32 @@ main {
   padding-right: 15%;
 }
 
+a:link {
+  color: #6e6762;
+  text-decoration: none;
+}
+a:visited {
+  color: #6e6762;
+  text-decoration: none;
+}
+a:hover {
+  color: #6e6762;
+  text-decoration: none;
+}
+a:active {
+  color: #6e6762;
+  text-decoration: none;
+}
+
+.atema:hover {
+  font-size: 22px;
+}
+
+.temalinksforside {
+  position: absolute;
+  right: 38%;
+  top: 130%;
+}
 /* ___________________________ Box ___________________________ */
 
 .cvbox1,
@@ -169,6 +196,9 @@ main {
 .boxforside {
   border: 1px solid #5c3d30;
   width: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 42%;
 }
 
 .ommiggrid {
