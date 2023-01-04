@@ -71,7 +71,7 @@ h2 {
 
 h3,
 p {
-  margin: 5%;
+  margin: 3%;
 }
 
 h3 {
@@ -85,12 +85,11 @@ p {
   line-height: 25px;
 }
 
-.h1cv {
-  text-align: left;
-}
-
+.h1cv,
 .h1ommig {
   text-align: left;
+  font-size: 50px;
+  margin-bottom: 0.5em;
 }
 
 .h2forside {
@@ -178,19 +177,38 @@ a:active {
   right: 38%;
   top: 130%;
 }
+
+/* .ulcv1,
+.ulcv2 {
+  font-family: 'Roboto', sans-serif;
+  color: #6e6762;
+  line-height: 25px;
+} */
+
+.licv {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #6e6762;
+  line-height: 25px;
+  list-style-type: disc;
+}
+
 /* ___________________________ Box ___________________________ */
 
 .cvbox1,
-.cvbox2,
-.boxommig {
+.cvbox2 {
   background-color: white;
-  padding: 5%;
+  padding: 2%;
   box-shadow: 5px 5px 5px #6e6762;
   border-radius: 2px;
 }
 
 .cvbox1 {
   margin-bottom: 5%;
+}
+
+.cvbox2 {
+  margin-bottom: 20%;
 }
 
 .boxforside {
@@ -207,12 +225,12 @@ a:active {
 }
 
 .boxommig {
-  margin-right: 10%;
+  margin-bottom: 20%;
 }
 
 /* __________________________ img _______________________ */
 
-.boximgSiff {
+/* .boximgSiff {
   display: flex;
   position: relative;
   max-width: 100%;
@@ -220,23 +238,28 @@ a:active {
   padding: 5%;
   box-shadow: 5px 5px 5px #6e6762;
   border-radius: 2px;
-}
+} */
 
 .imgSiff {
-  max-width: 70%;
+  opacity: 100%;
+  max-width: 90%;
+  box-shadow: 5px 5px 5px #6e6762;
+  transform: rotate(12deg);
+  margin-top: 0.5rem;
+  margin-left: 4rem;
 }
 
-img {
+.imgopacity {
   max-width: 100%;
 }
 
-img {
+.imgopacity {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   opacity: 30%;
 }
 
-img:hover {
+.imgopacity:hover {
   filter: none;
   -webkit-filter: grayscale(0);
   opacity: 100%;
