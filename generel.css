@@ -148,9 +148,25 @@ a:active {
   text-decoration: none;
 }
 
-.atema:hover {
-  font-size: 22px;
+/* .ultema {
+  transition: transform 1s ease-in;
 }
+
+.atema:hover {
+  transform: scale(1.5);
+} */
+
+.temalinks li {
+  transition: transform 0.15s, visibility 0.15s ease-in;
+}
+
+.temalinks:hover li {
+  transform: scale(1.2);
+}
+
+/* .atema:hover {
+  font-size: 21px;
+} */
 
 .temalinks {
   display: flex;
@@ -257,11 +273,10 @@ a:active {
 /* ___________________________ animation V _______________ */
 
 .pilimg {
-  -webkit-animation: mover 1s infinite alternate;
-  animation: mover 0.7s infinite alternate;
+  animation: jump 0.7s infinite alternate;
 }
 
-@keyframes mover {
+@keyframes jump {
   0% {
     transform: translateY(0);
   }
