@@ -13,11 +13,47 @@
   src: url('fonts/Playfair_Display/');
 } */
 
-/* _____________ Overskrifter, fonte, størrelser og farver _____________ */
+/* __________________________ Overskrifter & fonte ________________________ */
 
 .h1forside {
   opacity: 10%;
-  margin-bottom: 15rem;
+}
+
+.h2forside {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #6e6762;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Playfair Display';
+}
+
+h2 {
+  color: #5c3d30;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Playfair Display';
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Playfair Display';
+  color: #5c3d30;
+  margin: 3%;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
+  color: #6e6762;
+  line-height: 25px;
+  margin: 3%;
 }
 
 .h11,
@@ -40,50 +76,6 @@
   color: #b3aca7;
 }
 
-li,
-h1,
-h2,
-h3 {
-  font-family: 'Playfair Display';
-  /* font-family: 'Roboto', sans-serif; */
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-h2,
-h3 {
-  color: #5c3d30;
-}
-
-h1 {
-  color: #6e6762;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-size: 50px;
-  margin: 0;
-}
-
-h3,
-p {
-  margin: 3%;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Playfair Display', serif; */
-  color: #6e6762;
-  line-height: 25px;
-}
-
 .h1cv,
 .h1ommig {
   text-align: left;
@@ -91,39 +83,21 @@ p {
   margin-bottom: 0.5em;
 }
 
-.h2forside {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* ______________________  _________________ */
+
+main {
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.opgavebeskrivelser {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: white;
-  margin-top: 2rem;
-  padding: 5%;
-  box-shadow: 5px 5px 5px #6e6762;
-  border-radius: 2px;
-  margin-bottom: 5rem;
-}
-
-/* ______________________ Baggrundafarve _________________ */
-
-nav {
-  background-color: #dddbd6;
-}
-
-body {
-  background-color: #dddbd6;
-}
-
+nav,
+body,
 footer {
   background-color: #dddbd6;
 }
 
-/* _____________________ List __________________ */
+/* _____________________ Nav/List __________________ */
 
 header ul {
   list-style: none;
@@ -141,17 +115,16 @@ main ul {
   list-style: none;
 }
 
+li {
+  font-family: 'Playfair Display';
+}
+
 .ultema {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   margin-top: 10%;
   margin-bottom: 20%;
   line-height: 3rem;
-}
-
-main {
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 a:link {
@@ -175,21 +148,14 @@ a:active {
   font-size: 22px;
 }
 
-.ultema {
-  text-align: left;
-}
-
 .temalinks {
   display: flex;
   justify-content: center;
 }
 
-/* .ulcv1,
-.ulcv2 {
-  font-family: 'Roboto', sans-serif;
-  color: #6e6762;
-  line-height: 25px;
-} */
+.aprojekter {
+  margin-top: 10%;
+}
 
 .licv {
   font-family: 'Roboto', sans-serif;
@@ -218,26 +184,20 @@ a:active {
   top: 42%;
 }
 
-.ommiggrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .boxommig {
   margin-bottom: 20%;
 }
 
-/* __________________________ img _______________________ */
-
-/* .boximgSiff {
-  display: flex;
-  position: relative;
-  max-width: 100%;
+.opgavebeskrivelser {
   background-color: white;
+  margin-top: 2rem;
   padding: 5%;
   box-shadow: 5px 5px 5px #6e6762;
   border-radius: 2px;
-} */
+  margin-bottom: 5rem;
+}
+
+/* __________________________ img _______________________ */
 
 .imgSiff {
   opacity: 100%;
@@ -262,4 +222,24 @@ a:active {
   filter: none;
   -webkit-filter: grayscale(0);
   opacity: 100%;
+}
+
+.pilimg {
+  scale: 25%;
+  border-radius: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ___________________________ Grid ______________________ */
+
+.ommiggrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.opgavebeskrivelser {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
