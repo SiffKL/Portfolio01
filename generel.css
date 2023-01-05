@@ -189,6 +189,9 @@ a:active {
   z-index: 2;
   top: 42%;
   left: 38%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .boxommig {
@@ -250,3 +253,25 @@ a:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
+/* ___________________________ animation V _______________ */
+
+.pilimg {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 0.7s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+/* __________________________ Link ________________________ */
+
+/* .ninalink {
+  color: black;
+} */
