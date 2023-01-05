@@ -37,6 +37,7 @@
 .h1tema {
   font-size: 80%;
   letter-spacing: 8px;
+  color: #b3aca7;
 }
 
 li,
@@ -59,8 +60,6 @@ h3 {
 
 h1 {
   color: #6e6762;
-  /* font-size: 90px; */
-  /* opacity: 40%; */
   margin-bottom: 0;
 }
 
@@ -129,9 +128,13 @@ footer {
 header ul {
   list-style: none;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding: 1em;
   margin: 1em;
+}
+
+header li:hover {
+  text-decoration: underline;
 }
 
 main ul {
@@ -172,10 +175,13 @@ a:active {
   font-size: 22px;
 }
 
-.temalinksforside {
-  position: absolute;
-  right: 38%;
-  top: 130%;
+.ultema {
+  text-align: left;
+}
+
+.temalinks {
+  display: flex;
+  justify-content: center;
 }
 
 /* .ulcv1,
@@ -189,7 +195,7 @@ a:active {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   color: #6e6762;
-  line-height: 25px;
+  line-height: 35px;
   list-style-type: disc;
 }
 
@@ -201,14 +207,7 @@ a:active {
   padding: 2%;
   box-shadow: 5px 5px 5px #6e6762;
   border-radius: 2px;
-}
-
-.cvbox1 {
   margin-bottom: 5%;
-}
-
-.cvbox2 {
-  margin-bottom: 20%;
 }
 
 .boxforside {
