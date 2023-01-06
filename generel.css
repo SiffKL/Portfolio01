@@ -1,22 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
 
-/* @font-face {
+@font-face {
   font-family: 'Roboto';
   font-weight: 320;
-  src: url('fonts/Roboto/Roboto-Light.ttf;');
-} */
-/* 
+  src: url('fonts/Roboto/Roboto-Light.ttf');
+}
+
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 320;
   src: url('fonts/Playfair_Display/');
-} */
+}
 
 /* __________________________ Overskrifter & fonte ________________________ */
 
+.mainforside {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 .h1forside {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
   opacity: 10%;
+  margin-top: 2.5rem;
+}
+
+.h11,
+.h12,
+.h13 {
+  text-align: left;
+  font-size: 200px;
+  margin-top: 0;
+  line-height: 160px;
+}
+.h11 {
+  letter-spacing: 3px;
+}
+
+.h12 {
+  letter-spacing: 13px;
+}
+.h13 {
+  letter-spacing: 40px;
 }
 
 .h2forside {
@@ -31,6 +61,7 @@ h1 {
   margin-bottom: 0;
   text-align: center;
   font-family: 'Playfair Display';
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 h2 {
@@ -39,6 +70,7 @@ h2 {
   font-size: 50px;
   margin: 0;
   font-family: 'Playfair Display';
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 h3 {
@@ -58,20 +90,6 @@ p {
 
 .pommig {
   margin-left: 0;
-}
-
-.h11,
-.h12,
-.h13 {
-  font-size: 200px;
-  margin-top: 0;
-  line-height: 160px;
-}
-.h12 {
-  letter-spacing: 2px;
-}
-.h13 {
-  letter-spacing: 15px;
 }
 
 .h1tema {
@@ -129,6 +147,7 @@ li {
   margin-top: 10%;
   margin-bottom: 20%;
   line-height: 3rem;
+  width: 335px;
 }
 
 a:link {
@@ -148,29 +167,13 @@ a:active {
   text-decoration: none;
 }
 
-/* .ultema {
-  transition: transform 1s ease-in;
-}
-
-.atema:hover {
-  transform: scale(1.5);
-} */
-
-.temalinks li {
-  transition: transform 0.15s, visibility 0.15s ease-in;
-}
-
-.temalinks:hover li {
-  transform: scale(1.2);
-}
-
-/* .atema:hover {
-  font-size: 21px;
-} */
-
 .temalinks {
   display: flex;
   justify-content: center;
+}
+
+.atema:hover {
+  font-size: 21px;
 }
 
 .aprojekter {
@@ -203,11 +206,10 @@ a:active {
   display: flex;
   justify-content: center;
   z-index: 2;
-  top: 42%;
-  left: 38%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  top: 47.5%;
+  left: 40%;
+  /* grid-column: 1/2;
+  justify-self: center; */
 }
 
 .boxommig {
@@ -285,8 +287,18 @@ a:active {
   }
 }
 
-/* __________________________ Link ________________________ */
+/* __________________________ Animation ________________________ */
 
-/* .ninalink {
-  color: black;
-} */
+.fadein {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
