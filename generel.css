@@ -10,7 +10,7 @@
 @font-face {
   font-family: 'Playfair Display';
   font-weight: 320;
-  src: url('fonts/Playfair_Display/');
+  src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
 /* __________________________ Overskrifter & fonte ________________________ */
@@ -27,7 +27,8 @@
   grid-row: 1/2;
   justify-self: center;
   opacity: 10%;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  font-family: 'Playfair Display';
 }
 
 .h11,
@@ -37,6 +38,7 @@
   font-size: 200px;
   margin-top: 0;
   line-height: 160px;
+  font-family: 'Playfair Display';
 }
 .h11 {
   letter-spacing: 3px;
@@ -54,14 +56,14 @@
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: 'Playfair Display';
 }
 
 h1 {
   color: #6e6762;
   margin-bottom: 0;
   text-align: center;
-  font-family: 'Playfair Display';
-  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Playfair Display'; */
 }
 
 h2 {
@@ -69,22 +71,23 @@ h2 {
   text-align: center;
   font-size: 50px;
   margin: 0;
-  font-family: 'Playfair Display';
-  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Playfair Display'; */
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
   font-size: 25px;
-  font-family: 'Playfair Display';
+  /* font-family: 'Playfair Display'; */
+  font-family: 'Roboto', sans-serif;
   color: #5c3d30;
   margin: 3%;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
-  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Playfair Display', serif;
   color: #6e6762;
-  line-height: 25px;
+  line-height: 30px;
   margin: 3%;
 }
 
@@ -96,6 +99,7 @@ p {
   font-size: 80%;
   letter-spacing: 8px;
   color: #b3aca7;
+  font-family: 'Roboto', sans-serif;
 }
 
 .h1cv,
@@ -133,11 +137,21 @@ header li:hover {
   text-decoration: underline;
 }
 
+.liommig {
+  width: 60px;
+}
+
+.litemaer,
+.litemaer1 {
+  width: 234px;
+}
+
 main ul {
   list-style: none;
 }
 
 li {
+  /* font-family: 'Roboto', sans-serif; */
   font-family: 'Playfair Display';
 }
 
@@ -206,7 +220,7 @@ a:active {
   display: flex;
   justify-content: center;
   z-index: 2;
-  top: 47.5%;
+  top: 48%;
   left: 40%;
   /* grid-column: 1/2;
   justify-self: center; */
@@ -223,6 +237,10 @@ a:active {
   box-shadow: 5px 5px 5px #6e6762;
   border-radius: 2px;
   margin-bottom: 5rem;
+}
+
+.temabox {
+  margin: 3em;
 }
 
 /* __________________________ img _______________________ */
@@ -300,5 +318,37 @@ a:active {
   }
   100% {
     opacity: 100%;
+  }
+}
+
+/* .pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: 0% 50%;
+  }
+  100% {
+    transform: 50% 0%;
+  }
+} */
+
+.pulse {
+  animation: pulse 2s infinite;
+  /* animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1);
   }
 }
