@@ -264,7 +264,7 @@ p {
   }
 }
 
-.pulse {
+#pulse {
   animation: pulse 2s infinite;
 }
 
